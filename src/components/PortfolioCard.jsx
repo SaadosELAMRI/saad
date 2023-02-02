@@ -1,20 +1,18 @@
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import styles from '../styles/Card.module.css';
 
 
-const PortfolioCard = ({item}) => {
-    const router = useRouter();
+const PortfolioCard = (props) => {
     const handleClick = (e, id) => {
-        e.preventDefault()
-        router.push(`/project/${encodeURIComponent(item.id)}`)
+        e.preventDefault();
+        id == 0 ? props.setPage("meetease") : props.setPage("gestion");
     }
     return (
-        <div className={styles.card} onClick={(e) => handleClick(e, item.id)}>
-           <Image src={item.image} className={styles.image} />
+        <div className={styles.card} onClick={(e) => handleClick(e, props.item.id)}>
+           <Image src={props.item.image} className={styles.image} />
            <div>
-            <span className={styles.projectTitle}>{item.name}</span>
-            <p>{item.info}</p>
+            <span className={styles.projectTitle}>{props.item.name}</span>
+            <p>{props.item.info}</p>
            </div>
         </div>
     );

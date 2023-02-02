@@ -14,6 +14,7 @@
 .jobText {
     width: 40rem;
     text-align: start;
+    font-size: 26px;
 }
 .duration {
     font-size: 36px;

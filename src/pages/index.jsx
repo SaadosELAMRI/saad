@@ -1,8 +1,10 @@
 import Accueil from '@/components/Accueil';
 import Head from 'next/head';
-import Cv from './cv';
-import Portfolio from './portfolio';
-import Propos from './propos';
+import Cv from './Cv';
+import Portfolio from './Portfolio';
+import Gestion from './project/Gestion';
+import Meetease from './project/Meetease';
+import Propos from './Propos';
 
 export default function Home(props) {
   const page = props.page;
@@ -14,6 +16,6 @@ export default function Home(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
     </Head>
-    { page == "acceuil" ? <Accueil /> : page == "cv" ? <Cv /> : page == "portfolio" ? <Portfolio /> : page == "propos" ? <Propos /> : false }
+    { page == "acceuil" ? <Accueil /> : page == "cv" ? <Cv /> : page == "portfolio" ? <Portfolio setPage={props.setPage} /> : page == "propos" ? <Propos /> : page == "meetease" ? <Meetease /> : page == "gestion" ? <Gestion /> : false }
   </div>)
 }

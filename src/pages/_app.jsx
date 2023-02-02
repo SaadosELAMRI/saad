@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }) {
     </style>
 
     <Layout setPage={setPage}>
-      <Component {...pageProps} page={page} />
+      <Component {...pageProps} setPage={setPage} page={page} />
     </Layout>
   </>
 }

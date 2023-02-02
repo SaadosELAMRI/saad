@@ -4,7 +4,7 @@ import PortfolioCard from '../components/PortfolioCard';
 import { data } from "../constants/data";
 
 
-const Portfolio = () => {
+const Portfolio = (props) => {
     return (
         <div className={styles.portfolio}>
             <Head>
@@ -14,7 +14,7 @@ const Portfolio = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             {
-                data.map((val, idx, arr) => (<PortfolioCard key={idx} item={val} />))
+                data.map((val, idx, arr) => (<PortfolioCard setPage={props.setPage} key={idx} item={val} />))
             }
         </div>
     );
