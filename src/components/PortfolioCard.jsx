@@ -5,7 +5,7 @@ import styles from '../styles/Card.module.css';
 const PortfolioCard = (props) => {
     const handleClick = (e, id) => {
         e.preventDefault();
-        id == 0 ? props.setPage("meetease") : props.setPage("gestion");
+        id == 0 ? props.setPage("gestion") : props.setPage("meetease");
     }
     return (
         <div className={styles.card} onClick={(e) => handleClick(e, props.item.id)}>
