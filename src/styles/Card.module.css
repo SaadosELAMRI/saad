@@ -1,0 +1,14 @@
+.card {
+    display: flex;
+    font-size: 32px;
+    cursor: pointer;
+}
+.image {
+    width: 200rem;
+    height: auto;
+}
+.projectTitle {
+    font-size: 64px;
+    font-weight: bolder;
+    text-align: center;
+}

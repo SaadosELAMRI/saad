@@ -1,0 +1,28 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.link {
+    text-decoration: none;
+    border-radius: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: black;
+    color: white;
+    font-size: 28px;
+}
+.projectImage {
+    width: 40rem;
+    height: auto;
+}
+.info {
+    justify-self: center;
+    text-align: center;
+    font-size: 28px;
+    margin-right: 20px;
+    margin-left: 20px;
+}

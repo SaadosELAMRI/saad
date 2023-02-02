@@ -1,0 +1,17 @@
+.propos {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    max-width: 50rem;
+    margin: auto;
+}
+.title {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 64px;
+}
+
+.text {
+    font-size: 32px;
+    text-align: center;
+}

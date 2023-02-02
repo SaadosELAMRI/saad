@@ -1,0 +1,12 @@
+.container {
+    margin-top: 50px;
+}
+.titre {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-weight: bolder;
+}
