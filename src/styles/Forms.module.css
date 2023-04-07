@@ -1,0 +1,106 @@
+/* Feuille du style du contact form */
+
+/* Conteneur du contact form */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Style du form (wrapper) */
+.form{
+    display: flex;
+    flex-direction: column;
+    /* Pr box shadow, j'ai utilisé un outil pr generer ses valeurs. Voici la réference : https://html-css-js.com/css/generator/box-shadow/ */
+    /* Box shadow pr les navigateurs tels mozilla */
+    -webkit-box-shadow: 3px 9px 13px -6px rgba(0,0,0,0.88); 
+    /* Box shadow Pr chrome */
+    box-shadow: 3px 9px 13px -6px rgba(0,0,0,0.88);
+    padding: 40px 80px;
+    margin: 30px 0;
+}
+/* Style du titre (Me contacter) */
+.form > h1{
+    color: #06b6d4;
+    text-align: center;
+}
+/* Style de la lettre M qui se trouve dans le titre "Me contacter" */
+.form > h1 > .letter{
+    text-decoration: underline;
+    text-decoration-color:#22d3ee ;
+    text-decoration-thickness: 4px;
+    text-underline-offset:5px;
+}
+/* Container pour wrapper le nom et le prénom en une seule ligne, pour faire un peu beau coté visuel */
+.form> .credentials{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    margin: 20px 0 0 0;
+}
+/* Style des inputs */
+.form> .credentials >.credentialsErrorsWrapper > input, .form > input, .form > textarea{
+    padding:10px 15px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #777;
+    color:#444;
+}
+/* Ca du style propre à l'input email */
+.form > input{
+    width: 100%;
+    margin: 30px 0 0 0;
+    color:#444;
+}
+/* Du style pr le textarea : là où le message sera saisis */
+.form> textarea{
+    margin: 30px 0 0 0;
+    padding: 100px 15px;
+}
+/* Style pr mettre les inputs de credentials (nom et prénom) dans le meme niveau vertical que le message de l'erreur lorsque celà apparaitra */
+.credentialsErrorsWrapper{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* Style du mssg d'erreur */
+.erreur{
+    color:crimson;
+    text-align: center;
+    margin: 8px 0 0 0;
+}
+/* Style pour le conteneur du boutton */
+.form > .buttonContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0 0 0;
+}
+/* Style pour le boutton en sois */
+.form > .buttonContainer > button{
+    background:#06b6d4;
+    color: #fff;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Responsive mode (For mobile) */
+@media screen and (max-width: 400px)  {
+    .container{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .form{
+        padding: 20px;
+    }
+    .form> .credentials >.credentialsErrorsWrapper > input, .form > input, .form > textarea{
+        padding:8px 10px;
+    }
+    .form> textarea{
+        margin: 30px 0 0 0;
+        padding: 50px 15px;
+    }
+}

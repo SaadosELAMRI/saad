@@ -8,10 +8,13 @@ const Cv = () => {
     return (
         <div className={styles.cv}>
             <Head>
-                <title>Saad El Amri Cv</title>
-                <meta name="description" content="Saad El Amri CV!" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+            <title>Portfolio | CV</title>
+        <meta name="description" content="CV de Saad El Amri" />
+
+
+        <meta property ="og:title" content="Portfolio | CV"  />
+        <meta property ="og:description" content="L'expérience professionnelle et la formation de Saad El-amri"  />
+        <meta property ="og:image" content="http://localhost:3000/saad.png"  />
             </Head>
             <Image src={saad} alt="Saad El Amri Image" className={styles.avatar} />
             <span className={styles.monCV}>Mon CV</span>

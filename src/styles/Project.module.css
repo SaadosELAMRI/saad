@@ -16,7 +16,7 @@
     font-size: 28px;
 }
 .projectImage {
-    width: 40rem;
+    width: 30rem;
     height: auto;
 }
 .info {
@@ -26,3 +26,19 @@
     margin-right: 20px;
     margin-left: 20px;
 }
+
+@media(max-width:425px){
+    .projectImage{
+        height:220px;
+        width:300px;
+    }
+}
+
+@media(width: 768px) {
+    .projectImage {
+        height: 320px;
+        width:auto;
+        margin: auto;
+    }
+}
+

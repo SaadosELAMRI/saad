@@ -9,6 +9,8 @@ const roboto = Roboto_Flex({ subsets: ['latin'] });
 const montserrat = Montserrat({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }) {
+  // on ultilise une globale use state hook pour afficher la page 
+  // et on l'a passe au subcomponent pour la changer ulterieurement
   const [page, setPage] = useState("acceuil");
   return <>
     <style jsx global>
